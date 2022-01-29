@@ -2,7 +2,7 @@ import math
 
 def f(x):
     #return( 2.0*math.sin(2.0*x) - x**3 + 3.0)
-    return x**3 - 4
+    return x**3 - 4 # mudamos aqui a expressão dada da questão para obtermos o resultado do calculo
 
 l = 0.0000001
 tol = 0.0000001

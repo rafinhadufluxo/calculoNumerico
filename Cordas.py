@@ -3,15 +3,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def f(x):
-    #return 0.4*x**3 - np.exp(2*x) + 1.8
-    return x**3 - 4 # mudamos aqui a expressão dada da questão para obtermos o resultado do calculo
+    return x + 3*math.cos(x) - np.exp(x) # mudamos aqui a expressão dada da questão para obtermos o resultado do calculo
 
-#a = 1 #intervalo, a < b
-#b = 2
-a = float(input("Entre com o valor de 'a' do intervalo [a;b]: "))
-b = float(input("Entre com o valor de 'b' do intervalo [a;b]: "))
-
-eps = 10**(-6)#0.000001
+a = -2#intervalo, a < b
+b = -1
+eps = 10**(-2)#0.000001
 i = 0
 y = []
 eixoX = []
@@ -23,15 +19,17 @@ for i in range(n):
     eixoX.append(0)
 
 
+
+
 #existencia da raíz no intervalo
-def verificaRaiz(a, b):
-    if(f(a)*f(b) <= 0):
+def verificaRaiz(a, x0):
+    if(f(a)*f(x0) <= 0):
         return True
     else:
         return False
 
 #codigo principal
-def bisseccao(a, b):
+def cordas(a, b):
     
     if verificaRaiz(a, b):
         print ('Precisão: {:.10f}'.format(eps))
@@ -39,12 +37,12 @@ def bisseccao(a, b):
         print ('\nProcesso de Convergencia:\n')
         cont_it = 0
         fx0 = 100
-
+        x0 = (a*f(b)-b*f(a))/(f(b)-f(a))
+        fa = f(a)
+        
         while abs(fx0) > eps:
-            x0 = ((b+a)/2.0) #+ a #atualiza ponto médio
             cont_it += 1 #contador de iterações
             fx0 = f(x0)
-            
 
             #verifica se o próprio ponto é a raíz
             if(f(a) == 0):
@@ -60,11 +58,12 @@ def bisseccao(a, b):
             if verificaRaiz(a, x0):
                 b = x0
             else:
-                verificaRaiz(x0, b)
                 a = x0
-            
+                
+
+            x0 = (a*f(b)-b*f(a))/(f(b)-f(a))
             print ('I{} = {:.10f}'.format(cont_it, x0))
-            
+          
 
     else:
         print ('Função não possui raíz no intervalo selecionado.')
@@ -75,9 +74,11 @@ def bisseccao(a, b):
     print ('\nQuantidade de iterações processadas: {}'.format(cont_it))
     print ('Valor final: {:.10f}'.format(x0))
     plt.plot(x,y,'b',x,eixoX,'black')
-    plt.show()  
+    plt.show() 
+
 
 if(a >= b):
     print ('Intervalo inválido.')
+
 else:
-    bisseccao(a, b)
+    cordas(a, b)
