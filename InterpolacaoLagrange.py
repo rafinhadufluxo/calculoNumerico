@@ -7,7 +7,7 @@ def main():
     pontos = int(input('Quantidade de pontos que serão utilizados: '))
     X,Y =[],[]
     for i in range(pontos):
-        x=float(input("X" + str(i)+ "="))
+        x= float(input("X" + str(i)+ "="))
         X.append(x)
 
         y = float(input("Y" + str(i)+ "="))

@@ -11,3 +11,26 @@ Essa CCR envolve operações de adição, subtração, multiplicação, divisão
 ![bissecção](img/img1.PNG )
 
 ## Método das Cordas ou secante
+
+## Método Interpolação Lagrange
+
+## Método Interpolação Newton
+
+
+## Como Contribuir
+
+Para contribuir e deixar a comunidade open source um lugar incrivel para aprender, projetar, criar e inspirar outras pessoas. Basta seguir as instruções logo abaixo:
+
+1. Realize um Fork do projeto
+2. Crie um branch com a nova feature (`git checkout -b feature/featureCNumerico`)
+3. Realize o Commit (`git commit -m 'Add some featureCNumerico'`)
+4. Realize o Push no Branch (`git push origin feature/featureCNumerico`)
+5. Abra um Pull Request
+
+<br>
+
+## Autores
+
+- **Isabela** - _Acadêmica do Curso de Engenharia Ambiental -UFFS_. 
+- **Simone** - _Acadêmica do Curso de Engenharia Ambiental -UFFS_. 
+- **[Rafinha](https://github.com/rafalup)** - _Acadêmica do Curso de Ciência da Computação -UFFS_. 
