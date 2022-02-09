@@ -31,6 +31,4 @@ Para contribuir e deixar a comunidade open source um lugar incrivel para aprende
 
 ## Autores
 
-- **Isabela** - _Acadêmica do Curso de Engenharia Ambiental -UFFS_. 
-- **Simone** - _Acadêmica do Curso de Engenharia Ambiental -UFFS_. 
 - **[Rafinha](https://github.com/rafalup)** - _Acadêmica do Curso de Ciência da Computação -UFFS_. 
