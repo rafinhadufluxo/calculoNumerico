@@ -1,5 +1,8 @@
 #pego do git (https://github.com/douglasgusson/regra-simpson)
-# como compilar $ python3 main.py 0 1 90 '3*x**(1/3)/e**(x**2)'
+# como compilar $ python3 main_regra_simpson.py 0 1 90 '3*x**(1/3)/e**(x**2)'
+
+# a função foi extraida do repositorio do igor, observe a função dada (*derive*)
+
 import sys
 from math import *
 
